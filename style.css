@@ -205,6 +205,10 @@ header .row {
     flex-direction: column;
 }
 
+.header__title {
+    
+}
+
 .header__description--companies {
     width:400px;
     height: 28px;
@@ -212,25 +216,41 @@ header .row {
 
 .header__description--email-wrapper {
     position: relative;
-    display: block;
-    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
 }
 
 .email__input {
     width: 100%;
-    padding-right: 40px;
-    height: 60px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    padding: 12px;
+    background-color: #ffffff;
+    border-radius: 40px;
 }
 
 .submit__button {
-    position: absolute;
-    top: 50%;
-    right: 5px;
-    height: 60px;
+    z-index: 2;
+    height: 40px;
+    width: 160px;
+    margin-right: 5px;
+    background-color:#6415ff;
+    color:#f7fafc;
+    border-radius: 40px;
 }
-.header__description--design {
 
-    
+.submit__button:hover {
+    cursor: pointer;
+    background-color:rgb(80,17,204); 
+}
+
+.header__description--design {
+width: 60%;
 }
 
 
