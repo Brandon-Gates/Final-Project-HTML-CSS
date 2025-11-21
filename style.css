@@ -203,6 +203,9 @@ header .row {
 .header__description {
     display: flex;
     flex-direction: column;
+    width: 40%;
+    height: 100%;
+
 }
 
 .header__title {
@@ -251,9 +254,12 @@ header .row {
 
 .header__description--design {
 width: 60%;
+
 }
 
-
+img {
+    width: 100%;
+}
 
 
 /* 
