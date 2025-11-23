@@ -85,6 +85,7 @@ nav {
     align-items: center;
     margin: 0 24px;
     padding: 0 0 4px;
+    color: #243e63;
 }
 
 .nav__logo {
@@ -98,6 +99,7 @@ nav {
     font-weight: 900px;
     padding-right: 4px;
     margin: 0 24px 0 0;
+    color: #243e63;
 }
 
 .nav__logo--text:hover {
@@ -200,6 +202,10 @@ header .row {
     align-items: center;
     justify-content: space-between;
 
+}
+
+.header__title{
+    color: #1a202c;
 }
 
 .header__description {
