@@ -676,6 +676,42 @@ PRICING ↓
     align-items: center;
 }
 
+.section__plans {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.section__plan {
+    width: 100%;
+    max-width: 384px;
+    margin: 64px 32px 0 0;
+    padding-top: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;;
+}
+
+.plan__stripe {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 8px;
+}
+
+.section__plan:nth-child(1) .plan__stripe
+ .plan__button {
+    color:#f7fafc;
+    background:linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+
 /* 
 
 TESTIMONIALS ↓
