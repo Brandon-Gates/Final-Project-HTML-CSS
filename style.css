@@ -723,9 +723,9 @@ PRICING ↓
     text-align: center;
 }
 
-.plan:nth-child(odd) .plan__name,
-.plan:nth-child(odd) .plan__price,
-.plan:nth-child(odd) .plan__target {
+.section__plan:nth-child(odd) .plan__name,
+.section__plan:nth-child(odd) .plan__price,
+.section__plan:nth-child(odd) .plan__target {
     color: #1a202c;
 }
 
@@ -745,7 +745,7 @@ PRICING ↓
     margin: 4px 0;
 }
 
-.plan:nth-child(odd) .plan__button {
+.section__plan:nth-child(odd) .plan__button {
     color: #a0aec0;
 }
 
@@ -754,8 +754,8 @@ PRICING ↓
     letter-spacing: 0.1em;
 }
 
-.plan:nth-of-type(1) .plan__middle,
-.plan:nth-child(3) .plan__middle {
+.section__plan:nth-of-type(1) .plan__middle,
+.section__plan:nth-child(3) .plan__middle {
     border-top: 2px solid rgb(229, 231, 235);
     border-bottom: 2px solid rgb(229, 231, 235);
 }
@@ -807,11 +807,11 @@ PRICING ↓
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
-.plan:nth-child(2) {
+.section__plan:nth-child(2) {
     background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
 }
 
-.plan:nth-child(2) .plan__stripe {
+.section__plan:nth-child(2) .plan__stripe {
     visibility: hidden;
 }
 
@@ -823,16 +823,16 @@ PRICING ↓
     height: 8px;
 }
 
-.plan:nth-child(2) .plan__middle {
+.section__plan:nth-child(2) .plan__middle {
 border-top: 2px solid rgb(102, 126, 234);
 border-bottom: 2px solid rgb(102, 126, 234);
 }
 
-.plan:nth-child(2) .plan__name, 
-.plan:nth-child(2) .plan__price, 
-.plan:nth-child(2) .plan__target, 
-.plan:nth-child(2) .plan__duration, 
-.plan:nth-child(2) .plan__feature {
+.section__plan:nth-child(2) .plan__name, 
+.section__plan:nth-child(2) .plan__price, 
+.section__plan:nth-child(2) .plan__target, 
+.section__plan:nth-child(2) .plan__duration, 
+.section__plan:nth-child(2) .plan__feature {
 color: #f7fafc;
 }
 
@@ -842,8 +842,8 @@ z-index: 10;
 position: relative;
 }
 
-.plan:nth-child(3) .plan__stripe, 
-.plan:nth-child(3) .plan__button {
+.section__plan:nth-child(3) .plan__stripe, 
+.section__plan:nth-child(3) .plan__button {
 color: #f7fafc;
 background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
