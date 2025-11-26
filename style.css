@@ -706,14 +706,13 @@ PRICING ↓
 }
 
 .section__plan:nth-child(1) 
- .plan__button {
+.plan__button {
     color:#f7fafc;
    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
 }
-
-.plan__stripe
-.section__plan:nth-child(1) {
- background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+.section__plan:nth-child(1)
+.plan__stripe {
+background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
 }
 
 .plan__top,
@@ -745,7 +744,7 @@ PRICING ↓
     margin: 4px 0;
 }
 
-.section__plan:nth-child(odd) .plan__button {
+.section__plan:nth-child(odd) {
     color: #a0aec0;
 }
 
