@@ -217,6 +217,14 @@ header .row {
 
 }
 
+.customers__title {
+margin-top: 80px;
+color: rgb(160, 174, 192);
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 0.6px;
+}
+
 
 .header__desription--companies {
     
@@ -224,39 +232,44 @@ header .row {
     width: 100%;
     max-width: 400px;
     height: auto;
+    margin-top: 16px;
+    padding-right: 128px;
+    opacity: 0.5;
 }
+
 .header__description > *{
     margin: 0;
 }
 
-.header__description--email-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    max-width: 448px;
-    height: 68px;
+.header__email {
+width: 100%;
+max-width: 448px;
+height: 68px;
+position: relative;
+display: flex;
+justify-content: flex-end;
+align-items: center;
 }
 
-.email__input {
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    padding: 20px 192px 20px 32px;
-    font-weight: 500;
-    border-radius: 500px;
-    font-size: 16px;
-    border: 2px solid rgb(229, 231, 235);
-    transition: border-color 300ms;
-    z-index: 1;
+.header__email--input {
+width: 100%;
+border-radius: 500px;
+border: 2px solid rgb(229, 231, 235);
+padding: 20px 192px 20px 32px;
+color: rgb(36, 62, 99);
+font-size: 16px;
+font-weight: 500;
+position: absolute;
+top: 0px;
+bottom: 0px;
+z-index: 1;
+transition: border-color 300ms;
 }
 
-.submit__button {
+.header__email--btn {
     z-index: 2;
     margin: 8px;
-    height: 52px;
+    height: calc(100% - 16px);
     border-radius: 500px;
     width: 160px;
     border: none;
@@ -267,9 +280,12 @@ header .row {
     transition: 300ms;
 }
 
-.submit__button:hover {
-    cursor: pointer;
-    background-color:rgb(80,17,204); 
+.header__email--btn:hover {
+background-color: rgba(60,13,153);
+}
+button {
+cursor: pointer;
+border: medium;
 }
 
 .header__description--design {
@@ -1204,7 +1220,14 @@ MOBILE RESPONSIVENESS ↓
 @media(max-width: 1280px) {
     header .row {
         align-items: flex-end;
+        flex-direction: column;
     }
+    .header__description--companies {
+padding-right: 64px;
+}
+.header__description--design {
+max-width: 512px;
+}
 }
 
 @media (max-width: 1024px) {
@@ -1216,6 +1239,63 @@ MOBILE RESPONSIVENESS ↓
         flex-direction: column;
         align-items: center;
     }
+    .header__description {
+ justify-content: center;
+ width: 90%;
+ margin: 0 auto;
+ text-align: center;
+}
+.header__email {
+    margin: 0 auto;
+}
+.header__description--design{
+    width: 100%;
+    max-width: 512px;
+    margin: 0 auto;
+}
+.header__description--companies {
+    padding-right: 0px;
+}
+#features .section__title,
+#pricing .section__title,
+#quality .section__title,
+#values .section__title {
+    line-height: 1.25;
+    font-size: 48px;
+}
+.values__list {
+    flex-direction: column;
+    max-width: 320px;
+}
+.feature__row {
+    padding: 32px 8px;
+    margin: 0 16px;
+}
+.plans {
+    flex-direction: column;
+    align-items: center;
+}
+.section__title {
+    font-size: 36px;
+}
+.section__para {
+    font-size: 16px;
+}
+.start__title {
+    text-align: center;
+    width: 100%;
+    max-width: 512px;
+}
+.start__button {
+    padding: 16px 32px;
+}
+.start__buttons {
+width: auto;
+margin-top: 24px;
+}
+.nav__links{
+    display: none;
+}
     footer {
         padding: 80px 32px;
     }
@@ -1234,6 +1314,40 @@ MOBILE RESPONSIVENESS ↓
     #pricing .row {
         margin-top: 40px;
     }
+    .section__para {
+        font-size: 14px;
+    }
+    .values__list {
+        margin: 0 auto;
+    }
+     .quality__description, 
+    .steps__description, 
+    .values__description, 
+    .testimonials__description,
+    .values__img {
+        text-align: center;
+        padding: 0;
+        margin-top: 64px;
+        width: 100%;
+        max-width: 448px;
+    }
+     .testimonials__img {
+        width: 100%;
+        max-width: 448px;
+    }
+     .footer__column {
+        width: calc(100% / 3);
+    }
+    .footer__copyright, 
+    .footer__socials {
+margin-top: 32px;
+}
+.start__row {
+    flex-direction: column;
+}
+.footer__social--link:first-child {
+margin-left: 0px;
+}
 }
 
 @media(max-width: 640px) {
@@ -1247,4 +1361,51 @@ MOBILE RESPONSIVENESS ↓
     main {
         margin-bottom: 80px;
     }
+     .header__email--input {
+position: static;
+padding: 16px 0;
+padding-left: 32px;
+line-height: 1.5;
+}
+    .header__email {
+flex-direction: column;
+height: auto;
+}
+.header__email--btn {
+width: 100%;
+padding: 16px 0;
+margin: 16px 0;
+margin-bottom: 0px;
+line-height: 1.5;
+}
+.customers__title {
+font-size: 14px;
+letter-spacing: 0.05em;
+}
+.feature__row {
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+.start__container {
+padding: 80px 0;
+}
+.start__title {
+font-size: 24px;
+}
+.start__button {
+padding: 12px 24px;
+font-size: 14px;
+}
+.btn {
+line-height: 1.5;
+}
+.start__button:nth-child(2) {
+margin-top: 16px;
+}
+.footer__copyright {
+font-size: 14px;
+text-align: center;
+line-height: 1.5;
+}
 }
