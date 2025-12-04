@@ -1421,7 +1421,7 @@ margin-left: 0px;
     main {
         margin-bottom: 80px;
     }
-
+    
 
      .header__email--input {
 position: static;
@@ -1446,7 +1446,17 @@ letter-spacing: 0.05em;
 margin-top: 48px;
 }
 
+.step {
+flex-direction: column;
+align-items: center;
+text-align: center;
+display:flex;
+flex-wrap: wrap;
+}
 
+.step__description {
+    margin-top: 12px;;
+}
 
 .features__row {
 flex-direction: column;
@@ -1454,7 +1464,6 @@ align-items: center;
 text-align: center;
 display:flex;
 flex-wrap: wrap;
-height: 100%;
 }
 
 .start__container {
