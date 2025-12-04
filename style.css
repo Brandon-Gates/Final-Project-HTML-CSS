@@ -1421,7 +1421,10 @@ margin-left: 0px;
     main {
         margin-bottom: 80px;
     }
-    
+    .feature {
+        width: 100%;
+        max-width: 320px;
+        margin-bottom: 32px;}
 
      .header__email--input {
 position: static;
@@ -1487,4 +1490,15 @@ font-size: 14px;
 text-align: center;
 line-height: 1.5;
 }
+.footer__bottom {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer__columns {
+    flex-direction: column;
+    align-items: center;}
+
 }
